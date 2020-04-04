@@ -4,7 +4,7 @@
 
 <head>
   <!-- Page title -->
-  <title>Noor | Home</title>
+  <title>Noor | About</title>
 
   <!-- Page Icon -->
   <link rel="shortcut icon" href="{% static 'img/logo.jpg' %}" type="image/x-icon">
@@ -55,9 +55,9 @@
 
       <div class="main-menu">
         <ul class="js-clone-nav">
-          <li class="active"><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'home' %}">Home</a></li>
           <li><a href="{% url 'photos' %}">Photos</a></li>
-          <li><a href="{% url 'bio' %}">Bio</a></li>
+          <li class="active"><a href="{% url 'bio' %}">Bio</a></li>
         </ul>
         <ul class="social js-clone-nav">
           <li><a target="_blank" href="https://www.facebook.com/norhan.mahmoud.524596"><span
@@ -69,101 +69,26 @@
     </header>
     <main class="main-content">
       <div class="container-fluid photos">
-        <div class="row align-items-stretch">
+        <div class="row justify-content-center">
 
-          <div class="col-6 col-md-6 col-lg-8" data-aos="fade-up">
-            <a href="#" class="d-block photo-item">
-              <img src="{% static 'img/logo.jpg' %}" alt="Image" class="img-fluid">
-              <!-- <div class="photo-text-more">
-                <div class="photo-text-more">
-                  <h3 class="heading">Photos Title Here</h3>
-                  <span class="meta">42 Photos</span>
-                </div>
-              </div> -->
-            </a>
-          </div>
-          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <a href="#" class="d-block photo-item">
-              <img src="{% static 'img/2.jpg' %}" alt="Image" class="img-fluid">
-              <!-- <div class="photo-text-more">
-                <div class="photo-text-more">
-                  <h3 class="heading">Photos Title Here</h3>
-                  <span class="meta">42 Photos</span>
-                </div>
-              </div> -->
-            </a>
-          </div>
+          <div class="col-md-6 pt-4">
+            <figure class="mb-5" data-aos="fade-up">
+              <img src="{% static 'img/bio.jpeg' %}" alt="Image" class="img-fluid">
+            </figure>
 
-          <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
-            <a href="#" class="d-block photo-item">
-              <img src="{% static 'img/1.jpg' %}" alt="Image" class="img-fluid">
-              <!-- <div class="photo-text-more">
-                <h3 class="heading">Photos Title Here</h3>
-                <span class="meta">42 Photos</span>
-              </div> -->
-            </a>
-          </div>
-          <div class="col-6 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <a href="#" class="d-block photo-item">
-              <img src="{% static 'img/4.jpg' %}" alt="Image" class="img-fluid">
-              <!-- <div class="photo-text-more">
-                <div class="photo-text-more">
-                  <h3 class="heading">Photos Title Here</h3>
-                  <span class="meta">42 Photos</span>
-                </div>
-              </div> -->
-            </a>
-          </div>
-          <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <a href="#" class="d-block photo-item">
-              <img src="{% static 'img/5.jpg' %}" alt="Image" class="img-fluid">
-              <!-- <div class="photo-text-more">
-                <div class="photo-text-more">
-                  <h3 class="heading">Photos Title Here</h3>
-                  <span class="meta">42 Photos</span>
-                </div>
-              </div> -->
-            </a>
-          </div>
+            <h2 class="text-white mb-4" data-aos="fade-up">Hey There! I'm Noor <i class="icon-heart"
+                aria-hidden="true"></i></h2>
 
+            <div class="row" data-aos="fade-up">
+              <div class="col-md-12">
+                <p>I am a Senior Student at Benha Facility of Applied Art. I really love what i do and i am passion
+                  about it. I always tries to get ahead of myself and go farther and farther in my own beloved field.
+                </p>
 
-
-          <div class="col-6 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="">
-            <a href="#" class="d-block photo-item">
-              <img src="{% static 'img/6.jpg' %}" alt="Image" class="img-fluid">
-              <!-- <div class="photo-text-more">
-                <div class="photo-text-more">
-                  <h3 class="heading">Photos Title Here</h3>
-                  <span class="meta">42 Photos</span>
-                </div>
-              </div> -->
-            </a>
+                <p cass="mt-4">Thanks! <br> Noor Mahmoud <i class="icon-heart" aria-hidden="true"></i></p>
+              </div>
+            </div>
           </div>
-          <div class="col-6 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <a href="#" class="d-block photo-item">
-              <img src="{% static 'img/7.jpg' %}" alt="Image" class="img-fluid">
-              <!-- <div class="photo-text-more">
-                <div class="photo-text-more">
-                  <h3 class="heading">Photos Title Here</h3>
-                  <span class="meta">42 Photos</span>
-                </div>
-              </div> -->
-            </a>
-          </div>
-
-          <div class="col-6 col-md-6 col-lg-8" data-aos="fade-up">
-            <a href="#" class="d-block photo-item">
-              <img src="{% static 'img/3.jpg' %}" alt="Image" class="img-fluid">
-              <!-- <div class="photo-text-more">
-                <div class="photo-text-more">
-                  <h3 class="heading">Photos Title Here</h3>
-                  <span class="meta">42 Photos</span>
-                </div>
-              </div> -->
-            </a>
-          </div>
-
-
 
         </div>
 
@@ -197,6 +122,7 @@
   <script src="{% static 'js/aos.js' %}"></script>
   <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
   <script src="{% static 'js/main.js' %}"></script>
+
 </body>
 
 </html>
